@@ -212,7 +212,6 @@
               <textarea v-model="form.advantage" class="font_5 text_28" type="text" placeholder="Active"></textarea>
             </div>
           </div>
-          <!-- 岗位期望 -->
           <div class="flex-col group_14">
             <span class="self-start font_3 text_38">Add job expectations</span>
             <div class="grid_2">
@@ -243,60 +242,6 @@
               </div>
             </div>
           </div>
-          <!-- 工作经历 -->
-          <div class="flex-col group">
-            <span class="self-start font_3 text_50">Add work/study experience</span>
-            <div class="flex-col">
-            <div class="flex-row equal-division">
-              <div class="flex-col equal-division-item">
-                <span class="self-start font_7">Company name</span>
-                <div class="flex-col justify-start items-start self-stretch text-wrapper mt-15">
-                  <input v-model="form.project_name" class="font_5 text_9" type="text" placeholder="Unlimited">
-                </div>
-              </div>
-              <div class="flex-col equal-division-item">
-                <span class="self-start font_7">Industry involved</span>
-                <div class="flex-col justify-start items-start self-stretch text-wrapper mt-15">
-                  <input v-model="form.project_role" class="font_5 text_9" type="text" placeholder="Unlimited">
-                </div>
-              </div>
-            </div>
-            <div class="flex-row equal-division">
-              <div class="flex-col equal-division-item">
-                <span class="self-start font_7">Department name</span>
-                <div class="flex-col justify-start items-start self-stretch text-wrapper mt-15">
-                  <input v-model="form.project_name" class="font_5 text_9" type="text" placeholder="Unlimited">
-                </div>
-              </div>
-              <div class="flex-col equal-division-item">
-                <span class="self-start font_7">Job title</span>
-                <div class="flex-col justify-start items-start self-stretch text-wrapper mt-15">
-                  <input v-model="form.project_role" class="font_5 text_9" type="text" placeholder="Unlimited">
-                </div>
-              </div>
-            </div>
-          </div>
-            <span class="self-start font_7 text_51">Time</span>
-            <div class="flex-row items-center self-stretch group_4 view_9">
-              <span class="font_14 text_52">From</span>
-              <div class="flex-col justify-start items-center text-wrapper_12 ml-13">
-                <input v-model="form.project_time_begin" class="font_5 text_14" type="text"
-                  placeholder="Select the date">
-              </div>
-              <span class="font_14 text_53 ml-13">To</span>
-              <div class="flex-col justify-start items-center text-wrapper_12 ml-13">
-                <input v-model="form.project_time_end" class="font_5 text_54" type="text" placeholder="Select the date">
-              </div>
-            </div>
-            <span class="self-start font_7 text_55">Job content</span>
-            <div class="flex-col self-stretch section_12">
-              <textarea v-model="form.Project_description" class="self-stretch font_15" type="text"
-                placeholder="1. Mainly responsible for new employee orientation training;
-2. Analyze and develop employees' monthly personal sales performance;
-3. Help employees to increase the daily customer price, overall store management and other work."></textarea>
-            </div>
-          </div>
-          <!-- 项目经历 -->
           <div class="flex-col group">
             <span class="self-start font_3 text_50">Add project experience</span>
             <div class="flex-row equal-division">
@@ -328,10 +273,7 @@
             <span class="self-start font_7 text_55">Project description</span>
             <div class="flex-col self-stretch section_12">
               <textarea v-model="form.Project_description" class="self-stretch font_15" type="text"
-                placeholder="Describe the project and show the recruiter your project experience for example:  
-1. Project overview... 
-2. The division of personnel... 
-3. My division of labor..."></textarea>
+                placeholder='Describe the project and show the recruiter your project experience for example:  1. Project overview... 2. The division of personnel... 3. My division of labor...'></textarea>
             </div>
           </div>
           <div class="flex-col group">
@@ -373,9 +315,7 @@
             <span class="self-start font_7 text_66">Experience in school</span>
             <div class="flex-col items-start self-stretch section_13">
               <textarea v-model="form.Experience_in_school" class="font_15" type="text"
-                placeholder="1. Hold a position in school... 
-2. Get the honor... 
-3. Main courses learned..."></textarea>
+                placeholder='1. Hold a position in school... 2. Get the honor... 3. Main courses learned...'></textarea>
             </div>
           </div>
           <div class="flex-row group_17">
@@ -1175,10 +1115,6 @@ export default {
   width: 697px;
   z-index: 1002;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  input::-webkit-scrollbar,
-  textarea::-webkit-scrollbar {
-    display: none; /* 隐藏滚动条 */
-  }
   // 上传简历弹出页面样式
   .upload {
     max-height: 90vh;
@@ -1193,7 +1129,7 @@ export default {
     textarea {
       width: 100%;
       /* 设置宽度为100% */
-      height: 250px;
+      height: 100px;
       /* 设置高度 */
       padding: 5px;
       /* 添加内边距 */
@@ -1355,7 +1291,7 @@ export default {
 
         .section_12 {
           margin: 14px 38px 0;
-          padding: 10px 8px 10px 10px;
+          padding: 14px 8px 132px 10px;
           background-color: #ffffff;
           border-radius: 8px;
           border-left: solid 1px #d9d9d9;
@@ -1429,7 +1365,7 @@ export default {
 
         .section_13 {
           margin: 14px 38px 0;
-          padding: 10px 12px 10px;
+          padding: 14px 12px 176px;
           background-color: #ffffff;
           border-radius: 8px;
           border-left: solid 1px #d9d9d9;

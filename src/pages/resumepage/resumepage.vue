@@ -101,11 +101,9 @@
           </div>
           <!-- 2. 个人优势 -->
           <div v-if="!isEdit_2" class="flex-col group_11 mt-41">
-            <div class="flex-row justify-between items-center">
-              <div class="flex-row items-center">
-                <div class="section_8"></div>
-                <span class="font_3 text_14 ml-14">Personal advantage</span>
-              </div>
+            <div class="flex-row items-center">
+              <div class="section_8"></div>
+              <span class="font_3 text_14 ml-14">Personal advantage</span>
               <!-- 编辑键2 -->
               <img class="shrink-0 self-end image_3 image_19" src="../images/r4.png" @click="onEdit_2" />
             </div>
@@ -127,11 +125,9 @@
           </div>
           <!-- 3. 求职期望 -->
           <div v-if="!isEdit_3" class="flex-col group_11 mt-41">
-            <div class="flex-row justify-between items-center">
-              <div class="flex-row items-center">
+            <div class="flex-row items-center">
               <div class="section_8"></div>
               <span class="font_3 ml-14">Desired position</span>
-            </div>
               <!-- 编辑键3 -->
               <img class="image_3 ml-413" src="../images/r4.png" @click="onEdit_3" />
             </div>
@@ -179,76 +175,30 @@
           </div>
           <!-- 4.工作经历 -->
           <div v-if="!isEdit_4" class="flex-col group_7 mt-41">
-            <div class="flex-row justify-between items-center">
-              <div class="flex-row items-center">
-                <div class="shrink-0 section_8"></div>
-                <span class="font_3 ml-13">Work experience</span>
-              </div>
+            <div class="flex-row items-center">
+              <div class="shrink-0 section_8"></div>
+              <span class="font_3 ml-13">Work experience</span>
               <!-- 编辑键4 -->
-              <img class="image_3 ml-407" src="../images/r1.png" @click="onEdit_4" />
+              <img class="image_3 ml-407" src="../images/r4.png" @click="onEdit_4" />
             </div>
-            <!-- 工作经历（1） -->
-            <div class="work-experience-list-1">
-              <div class="flex-row items-center justify-between group_9">
-                <div class="flex-row items-center shrink-0 content-width">
-                  <span class="font_9 text_26">HUAWEI</span>
-                  <span class="font_9 text_27">Internet</span>
-                  <span class="font_6 text_28">design department</span>
-                  <span class="font_6 text_29">UI designer</span>
-                </div>
-                <div>
-                  <span class="ml-62 font_10 text_30">2023.6-2023.12</span>
-                </div>
+            <div class="flex-row items-center group_9">
+              <div class="flex-row items-center shrink-0 content-width">
+                <span class="font_9 text_26">HUAWEI</span>
+                <span class="font_9 text_27">Internet</span>
+                <span class="font_6 text_28">design department</span>
+                <span class="font_6 text_29">UI designer</span>
               </div>
-              <div class="flex-row justify-between group_10">
-                <!-- 左侧 -->
-                <div class="flex-row">
-                  <!-- 标题Job content： -->
-                  <div class="flex-row items-center self-stretch">
-                    <span class="font_9">Job content:</span>
-                  </div>
-                  <!-- 工作内容陈列 -->
-                  <div class="flex-col content content-width">
-                    <span class="ml-14 font_11">1. Web Ul design</span>
-                    <span class="ml-14 font_11">2. Connect the front and rear ends</span>
-                  </div>
-                </div>
-                <!-- 右侧：编辑此项工作经历-->
-                <div class="flex-row items-center self-stretch"><img class="image_3" src="../images/r4.png" @click="onEdit_4" /></div>
-              </div>
+              <span class="ml-62 font_10 text_30">2023.6-2023.12</span>
             </div>
-            <!-- 再添加的工作经历 -->
-            <div class="add-work-experience">
-              <!-- 分割线 -->
-              <div class="list-divider"></div>
-              <!-- 工作经历（2） -->
-              <div class="work-experience-list-2">
-                <div class="flex-row items-center justify-between group_9">
-                  <div class="flex-row items-center shrink-0 content-width">
-                    <span class="font_9 text_26">HUAWEI</span>
-                    <span class="font_9 text_27">Internet</span>
-                    <span class="font_6 text_28">design department</span>
-                    <span class="font_6 text_29">UI designer</span>
-                  </div>
-                  <div>
-                    <span class="ml-62 font_10 text_30">2023.6-2023.12</span>
-                  </div>
+            <div class="flex-col group_10 max-width">
+              <div class="flex-row title">
+                <div class="flex-row items-center self-stretch">
+                  <span class="font_9">Job content:</span>
                 </div>
-                <div class="flex-row justify-between group_10">
-                  <!-- 左侧 -->
-                  <div class="flex-row">
-                    <!-- 标题Job content： -->
-                    <div class="flex-row items-center self-stretch">
-                      <span class="font_9">Job content:</span>
-                    </div>
-                    <!-- 工作内容陈列 -->
-                    <div class="flex-col content content-width">
-                      <span class="ml-14 font_11">1. Web Ul design</span>
-                      <span class="ml-14 font_11">2. Connect the front and rear ends</span>
-                    </div>
-                  </div>
-                  <!-- 右侧：编辑键4_1-->
-                  <div class="flex-row items-center self-stretch"><img class="image_3" src="../images/r4.png" @click="onEdit_4" /></div>
+                <!-- 工作内容陈列 -->
+                <div class="flex-col content ">
+                  <span class="ml-14 font_11">1. Web Ul design</span>
+                  <span class="ml-14 font_11">2. Connect the front and rear ends</span>
                 </div>
               </div>
             </div>
@@ -256,8 +206,7 @@
           <!-- 4.工作经历-编辑状态 -->
           <div v-else-if="isEdit_4" class="flex-col edit_4">
             <div class="flex-col">
-              <span v-if="edit_5_state == add" class="self-start font_2 text_23">Add work/study experience</span>
-              <span v-else-if="edit_5_state == modify" class="self-start font_2 text_23">Modify work/study experience</span>
+              <span class="self-start font_2 text_23">Add work/study experience</span>
               <div class="grid">
                 <div class="flex-col grid-item">
                   <span class="self-start font_9">company name</span>
@@ -300,75 +249,35 @@
           </div>
           <!-- 5.项目经历 -->
           <div v-if="!isEdit_5" class="flex-col group_7 mt-41">
-            <div class="flex-row justify-between items-center">
-              <div class="flex-row items-center">
-                <div class="shrink-0 section_8"></div>
-                <span class="font_3 ml-14">Project experience</span>
-              </div>
+            <div class="flex-row items-center self-center">
+              <div class="shrink-0 section_8"></div>
+              <span class="font_3 ml-14">Project experience</span>
               <!-- 编辑键5 -->
-              <img class="self-start image_3 ml-386" src="../images/r1.png" @click="onEdit_5_add" />
+              <img class="self-start image_3 ml-386" src="../images/r4.png" @click="onEdit_5" />
             </div>
-            <!-- 项目经历（1） -->
-            <div class="project-experience-list-1">
-              <div class="flex-row justify-between items-center group_9">
-                <div class="flex-row shrink-0 content-width">
-                  <span class="font_9">Part-time platform for college students</span>
-                  <span class="font_6 text_29 ml-17">UI designer</span>
-                </div>
-                <span class="ml-62 font_10">2023.6-2023.12</span>
+            <div class="flex-row items-center group_9">
+              <div class="flex-row shrink-0 content-width">
+                <span class="font_9">Part-time platform for college students</span>
+                <span class="font_6 text_29 ml-17">UI designer</span>
               </div>
-              <div class="flex-row justify-between group_10">
-                <!-- 左侧 -->
-                <div class="flex-row">
-                  <div class="flex-row items-center self-stretch">
-                    <span class="font_9">Project description:</span>
-                  </div>
-                  <!-- 项目内容陈列 -->
-                  <div class="flex-col content">
-                    <span class="ml-14 font_11">1. Web Ul design</span>
-                    <span class="ml-14 font_11">2. Connect the front and rear ends</span>
-                  </div>
-                </div>
-                <!-- 右侧：编辑此项项目经历-->
-                <div class="flex-row items-center self-stretch"><img class="image_3" src="../images/r4.png" @click="onEdit_5_edit" /></div>
+              <span class="ml-62 font_10">2023.6-2023.12</span>
+            </div>
+            <div class="flex-row group_10 max-width">
+              <div class="flex-row items-center self-stretch">
+                <span class="font_9">Project description:</span>
+              </div>
+              <!-- 项目内容陈列 -->
+              <div class="flex-col content">
+                <span class="ml-14 font_11">1. Web Ul design</span>
+                <span class="ml-14 font_11">2. Connect the front and rear ends</span>
               </div>
             </div>
-            <!-- 再添加的项目经历 -->
-             <div class="add-project-experience">
-              <!-- 分割线 -->
-              <div class="list-divider"></div>
-              <!-- 项目经历（2） -->
-              <div class="project-experience-list-1">
-                <div class="flex-row justify-between items-center group_9">
-                  <div class="flex-row shrink-0 content-width">
-                    <span class="font_9">Part-time platform for college students</span>
-                    <span class="font_6 text_29 ml-17">UI designer</span>
-                  </div>
-                  <span class="ml-62 font_10">2023.6-2023.12</span>
-                </div>
-                <div class="flex-row justify-between group_10">
-                  <!-- 左侧 -->
-                  <div class="flex-row">
-                    <div class="flex-row items-center self-stretch">
-                      <span class="font_9">Project description:</span>
-                    </div>
-                    <!-- 项目内容陈列 -->
-                    <div class="flex-col content">
-                      <span class="ml-14 font_11">1. Web Ul design</span>
-                      <span class="ml-14 font_11">2. Connect the front and rear ends</span>
-                    </div>
-                  </div>
-                  <!-- 右侧：编辑此项项目经历-->
-                  <div class="flex-row items-center self-stretch"><img class="image_3" src="../images/r4.png" @click="onEdit_5_edit" /></div>
-                </div>
-              </div>
-             </div>
+
           </div>
           <!-- 5.项目经历-编辑状态 -->
           <div v-else-if="isEdit_5" class="flex-col edit_5">
             <div class="flex-col">
-              <span v-if="edit_5_state == add" class="self-start font_2 text_19">Add project experience</span>
-              <span v-else-if="edit_5_state == modify" class="self-start font_2 text_19">Modify project experience</span>
+              <span class="self-start font_2 text_19">Add project experience</span>
               <div class="flex-row equal-division">
                 <div class="flex-col equal-division-item">
                   <span class="self-start font_9 text_20">Project name</span>
@@ -400,14 +309,11 @@
               </button>
             </div>
           </div>
-          
           <!-- 6.教育经历 -->
           <div v-if="!isEdit_6" class="flex-col group_11 mt-41">
-            <div class="flex-row justify-between items-center">
-              <div class="flex-row items-center">
-                <div class="section_8"></div>
-                <span class="font_3 ml-14">Educational experience</span>
-              </div>
+            <div class="flex-row items-center">
+              <div class="section_8"></div>
+              <span class="font_3 ml-14">Educational experience</span>
               <!-- 编辑键6 -->
               <img class="self-start image_3 image_21 ml-332" src="../images/r4.png" @click="onEdit_6" />
             </div>
@@ -536,10 +442,7 @@ export default {
       isEdit_3: false, //编辑键3默认非编辑状态
       isEdit_4: false, //编辑键4默认非编辑状态
       isEdit_5: false, //编辑键5默认非编辑状态
-      isEdit_6: false, //编辑键6默认非编辑状态
-      edit_4_state: null, //点击的键是添加键or修改键
-      edit_5_state: null, //点击的键是添加键or修改键
-
+      isEdit_6: false, //编辑键5默认非编辑状态
       form1: {
         name: '',
         Job_status: '',
@@ -701,13 +604,8 @@ export default {
       this.isEdit_3 = false;
     },
     //编辑键4
-    onEdit_4_add() { //添加键
+    onEdit_4() {
       this.isEdit_4 = !this.isEdit_4;
-      this.edit_4_state = add; //此时点击的是添加键
-    },
-    onEdit_4_edit() { //修改键
-      this.isEdit_4 = !this.isEdit_4;
-      this.edit_4_state = modify; //此时点击的是修改键
     },
     onCancel_4() {
       this.isEdit_4 = false;
@@ -743,13 +641,8 @@ export default {
       this.isEdit_4 = false;
     },
     //编辑键5
-    onEdit_5_add() { //添加键
+    onEdit_5() {
       this.isEdit_5 = !this.isEdit_5;
-      this.edit_5_state = add; //此时点击的是添加键
-    },
-    onEdit_5_edit() { //修改键
-      this.isEdit_5 = !this.isEdit_5;
-      this.edit_5_state = modify; //此时点击的是修改键
     },
     onCancel_5() {
       this.isEdit_5 = false;
@@ -850,9 +743,6 @@ export default {
 .ml-407 {
   margin-left: 407px;
 }
-.ml-200{
-  margin-left: 200px;
-}
 
 .ml-386 {
   margin-left: 386.5px;
@@ -889,15 +779,8 @@ export default {
   width: 100%;
   overflow-y: auto;
   overflow: hidden;
-  height: 100%; 
+  height: 100%;
 
-  // 分割线样式
-  .list-divider {
-    margin-left: 5px;
-    margin-right: 5px;
-    background-color: #7e7e7e57;
-    height: 1px;
-  }
   .max-width {
     width: 680px;
   }
@@ -2147,7 +2030,7 @@ export default {
       padding: 0 23px;
 
       .content-width {
-        width: 460px;
+        width: 470px;
       }
 
       .group_9 {
@@ -2198,7 +2081,6 @@ export default {
 
       .group_10 {
         margin-top: 0;
-        margin-bottom: 20px;
 
         .font_9 {
           font-size: 18px;

@@ -137,7 +137,7 @@
       onClick_2() {
         // this.$router.push({ name: 'login_findjob' });
         // 测试路由
-        this.$router.push({ name: 'jobpage'}); 
+        this.$router.push({ name: 'resumepage'}); 
       },
     },
   };
